@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="HimalyanHike.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title></title>
+
+     <!-- Icon for the Webpages (tab)-->
+     <link rel="icon" type="image/png" href="img/NavBar_Logo.png" />
+
+         <!-- CSS StyleSheet link-->
+     <link rel="stylesheet" href="style.css" />
+
+     <!-- Google Font Parkinsans-->
+     <link href='https://fonts.googleapis.com/css?family=Parkinsans' rel='stylesheet'>
+
+     <!-- JavaScript File link-->
+     <script src="jQuery.js"></script>
+
+     <!-- jQuery Google CDN-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <style>
+         *{
+              font-family: 'Parkinsans';
+         }
+     </style>
+
+     <!-- Content PlaceHolder-->
+     <asp:ContentPlaceHolder ID="head" runat="server">
+     </asp:ContentPlaceHolder>
+</head>
+
+<body>
+     <form id="form1" runat="server">
+
+          <!-- Container Div -->
+          <div id="container">
+               <!-- Header -->
+               <header>
+                    <img src="img/Navbar/Header_Background.jpg" alt="Illustrated image of the Himalayas in shades of Green and blue" />
+               </header>
+               <nav>
+                    <ul>
+                         <!-- Small Brand Logo Image -->
+                         <li class="left">
+                              <img src="img/Navbar/NavBar_Logo.png" alt="Brand Logo with 3 green mountains" />
+                         </li>
+                         <!-- Links to Webpages -->
+                         <li><a href="Report.aspx">(Report)</a></li>
+                         <li><a href="Calculator.aspx">Calculator</a></li>
+                         <li><a href="View.aspx">View</a></li>
+                         <li><a href="Register.aspx">Register</a></li>
+                         <li><a href="FAQ.aspx">FAQ</a></li>
+                         <li><a href="Staff.aspx">Staff</a></li>
+                         <li><a href="Home.aspx">Home</a></li>
+                    </ul>
+               </nav>
+
+               <!-- Content PlaceHolder -->
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               </asp:ContentPlaceHolder>
+
+               <!-- Footer -->
+               <footer>
+                    <!-- Row 1 -->
+                    <div class="row">
+
+                         <!-- Column 1 -->
+                         <div class="col">
+                              <ul class="SiteLinks">
+                                   <li><b><a href="Home.aspx">Home</a></b></li>
+                                   <li><a href="Calculator.aspx">Calculator</a></li>
+                                   <li><a href="FAQ.aspx">FAQ</a></li>
+                                   <li><a href="Register.aspx">Register</a></li>
+                                   <li><a href="Staff.aspx">Staff</a></li>
+                                   <li><a href="View.aspx">View</a></li>
+                              </ul>
+                         </div>
+
+                         <!-- Column 2 (Site Links) -->
+                         <div class="col">
+                              <h2>Policies</h2>
+                              <ul class="SiteLinks">
+                                   <li><a href="#">Disclaimer</a></li>
+                                   <li><a href="#">Website Privacy</a></li>
+                                   <li><a href="#">Terms & Conditions</a></li>
+                                   <li><a href="#">Insurance</a></li>
+                                   <li><a href="#">Cookie Policy</a></li>
+                              </ul>
+                         </div>
+
+                         <!-- Column 3 (Social Media Icons)-->
+                         <div class="col">
+                              <h2>Follow</h2>
+                              <div class="socialMedia">
+                                   <a target="_blank" href="https://www.flaticon.com/uicons">
+                                        <img src="img/Navbar/facebook_icon.png" alt="Facebook icon"/></a>
+                                   <a target="_blank" href="https://www.flaticon.com/uicons">
+                                        <img src="img/Navbar/instagram_icon.png" alt="Instagram icon"/></a>
+                                   <a target="_blank" href="https://www.flaticon.com/uicons">
+                                        <img src="img/Navbar/linkedin_icon.png" alt="Linkedin icon"/></a>
+                                   <a target="_blank" href="https://www.flaticon.com/uicons">
+                                        <img src="img/Navbar/tiktok_icon.png" alt="TikTok icon"/></a>
+                                   <a target="_blank" href="https://www.flaticon.com/uicons">
+                                        <img src="img/Navbar/twitter_icon.png" alt="Twitter icon"/></a>
+                                   <a target="_blank" href="https://www.flaticon.com/uicons">
+                                        <img src="img/Navbar/youtube_icon.png" alt="YouTube icon"/></a>
+                              </div>
+                         </div>
+
+                         <!-- Column 4 (Contact Information)-->
+                         <div class="col">
+                              <h2>Contact: </h2>
+                              <ul id="contactList">
+                                   <li>
+                                        <a href="https://www.flaticon.com/free-icons/pin">
+                                             <img src="img/Navbar/map_icon.png" alt="Pin icons created by Smashicons - Flaticon" /></a>
+                                   </li>
+                                   <li><b>Address</b></li>
+                                   <li>Himalayan Hike, 789 Mountain Road,
+                                        <br />
+                                        Hilltown, Uttarakhand
+                                        <br />
+                                        248001, India.
+                                   </li>
+                                   <p></p>
+                                   <li>
+                                        <a href="https://www.flaticon.com/free-icons/pin">
+                                             <img src="img/Navbar/phone_icon.png" alt="Pin icons created by Freepik - Flaticon" /></a>
+                                   </li>
+                                   <li><b>Phone</b></li>
+                                   <li>+69 876 543 2100
+                                        <br />
+                                        (Monday - Friday, 09:00 to 17:00 IST)
+                                   </li>
+                                   <p></p>
+                                   <li>
+                                        <a href="https://www.flaticon.com/free-icons/email">
+                                             <img src="img/Navbar/mail_icon.png" alt="Email icons created by Freepik - Flaticon" /></a>
+                                   </li>
+                                   <li><b>E-mail</b></li>
+                                   <li>info@himalayanhike.com</li>
+                              </ul>
+                         </div>
+
+                    </div>
+                    <hr />
+                    <p>Copyright  &copy Himalayan Hike Sep 2024 - Nov 2024 | Pratyush Kakkar. All rights reserved </p>
+               </footer>
+          </div>
+     </form>
+</body>
+</html>

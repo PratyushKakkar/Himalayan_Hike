@@ -1,0 +1,824 @@
+﻿html {
+     scroll-behavior: smooth;
+}
+
+body {
+     background-color: #eaeef7;
+     font-family: 'Sans Serif Collection';
+}
+
+
+
+/* Header */
+header img {
+     margin: 0px;
+     padding: 0px;
+     display: block;
+     width: 100%;
+     height: auto;
+}
+
+
+
+/* Navigation Bar */
+nav {
+     position: sticky;
+     top: 0;
+}
+
+     nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0px 40px 0px 30px;
+          overflow: hidden;
+          background-color: #a49667;
+     }
+
+          nav ul li {
+               float: right;
+               padding-left: 10px;
+          }
+
+               nav ul li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 12px 14px;
+                    font-size: 20px;
+                    text-decoration: none;
+               }
+
+                    nav ul li a:hover {
+                         background-color: #8A7F58;
+                         text-shadow: 0px 0px 1px;
+                    }
+
+               nav ul li.left {
+                    float: left;
+               }
+
+               nav ul li img {
+                    height: 34px;
+                    padding: 3px;
+                    padding-top: 5px;
+               }
+
+@media screen and (max-width: 600px) {
+     nav ul li.left,
+     nav ul li {
+          float: none;
+     }
+}
+
+
+
+/* Footer */
+footer {
+     background-color: #a49667;
+     height: 450px;
+     color: #eaeef7;
+}
+
+     footer .row {
+          background-color: #a49667;
+     }
+
+     footer .col {
+          float: left;
+          width: 23%;
+          padding: 10px;
+          background-color: #a49667;
+     }
+
+@media screen and (max-width: 600px) {
+     footer .col {
+          width: 100%;
+     }
+}
+
+footer h2 {
+     text-align: center;
+}
+
+footer .col .SiteLinks {
+     padding: 0px
+}
+
+     footer .col .SiteLinks li {
+          padding: 13px;
+          text-align: center;
+          list-style-type: none;
+     }
+
+          footer .col .SiteLinks li:hover {
+               background-color: #8A7F58;
+               color: black;
+          }
+
+     footer .col .SiteLinks a {
+          font-size: 20px;
+          text-decoration: none;
+          color: #eaeef7;
+     }
+
+footer .col .socialMedia img {
+     width: 20px;
+     margin: 40px 13% 20px 12%;
+}
+
+footer .col #contactList {
+     padding: 0px;
+     margin: 0px;
+}
+
+     footer .col #contactList li {
+          list-style-type: none;
+          font-size: 15px;
+     }
+
+footer .col ul li img {
+     width: 20px;
+}
+
+footer img {
+     filter: invert(1);
+}
+
+     footer img:hover {
+          filter: none;
+     }
+
+
+
+/* Home Page */
+
+.HomePage hr {
+     border: 1.5px solid #7a9832;
+     margin: 100px;
+     border-radius: 5px;
+}
+
+.HomePage .row-1 {
+     margin: 2%;
+}
+
+     .HomePage .row-1 .col-30 {
+          box-sizing: border-box;
+          width: 30%;
+          float: left;
+          padding: 15px;
+     }
+
+     .HomePage .row-1 .col-70 {
+          box-sizing: border-box;
+          width: 70%;
+          float: left;
+          padding: 15px;
+     }
+
+          .HomePage .row-1 .col-70 strong {
+               color: #7c8e53;
+          }
+
+     .HomePage .row-1 .intro {
+          background-color: #f4f6fb;
+          color: darkslategrey;
+          padding: 15px;
+          border-radius: 5px;
+          box-shadow: 0 0 20px #f4f6fb;
+     }
+
+          .HomePage .row-1 .intro h1,
+          .HomePage .row-1 .intro h2 {
+               color: #67739d;
+          }
+
+.row-1::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+
+@media screen and (max-width: 600px) {
+     .HomePage .row-1 .col-30 {
+          width: 100%;
+     }
+
+     .HomePage .row-1 .col-70 {
+          width: 100%;
+     }
+}
+
+
+/* Home Page Gallery */
+.HomePage .TrendGallery {
+     margin: 50px;
+     margin-bottom: 100px;
+}
+
+     .HomePage .TrendGallery h1 {
+          text-align: center;
+          color: #67739d;
+          font-size: 45px;
+          letter-spacing: 3px;
+          text-shadow: 0px 0px 2px midnightblue;
+          margin-bottom: 0px;
+     }
+
+.HomePage h3 {
+     text-align: center;
+     margin: 5px 5px 50px 5px;
+     font-size: 20px;
+     color: #779cc6;
+}
+
+.HomePage .gallery {
+     border: 1.6px solid #67739d;
+     border-radius: 5px;
+     box-shadow: 0px 0px 3px;
+     background-color: #cddaea;
+}
+
+     .HomePage .gallery:hover {
+          border: 2px solid black;
+          opacity: 0.75;
+          transition: ease 0.5s;
+          transform: scale(1.05);
+     }
+
+     .HomePage .gallery img {
+          width: 100%;
+          border-radius: 5px;
+     }
+
+     .HomePage .gallery .desc {
+          padding: 10px;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 600;
+          color: darkslategrey;
+     }
+
+          .HomePage .gallery .desc p {
+               margin: 5px;
+          }
+
+.HomePage .col-25 {
+     padding: 0px 6px;
+     float: left;
+     width: 23.9%;
+}
+
+@media only screen and (max-width: 600px) {
+     .HomePage .col-25 {
+          width: 100%;
+     }
+}
+
+.TrendGallery::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+
+
+/* Home Page Other Services */
+.HomePage .OtherServices {
+     margin: 50px;
+     margin-bottom: 100px;
+}
+
+     .HomePage .OtherServices h1 {
+          text-align: center;
+          color: #67739d;
+          font-size: 45px;
+          letter-spacing: 3px;
+          text-shadow: 0px 0px 2px midnightblue;
+          margin-bottom: 0px;
+     }
+
+.HomePage .gallery {
+     border: 1.6px solid #67739d;
+     border-radius: 5px;
+     box-shadow: 0px 0px 3px;
+}
+
+     .HomePage .gallery:hover {
+          border: 2px solid black;
+          opacity: 0.75;
+          transition: ease 0.5s;
+          transform: scale(1.05);
+     }
+
+     .HomePage .gallery img {
+          width: 100%;
+          border-radius: 5px;
+     }
+
+     .HomePage .gallery .desc {
+          padding: 10px;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 600;
+          color: darkslategrey;
+     }
+
+          .HomePage .gallery .desc p {
+               margin: 5px;
+          }
+
+.HomePage .col-50 {
+     padding: 0px 15px;
+     float: left;
+     width: 47%;
+}
+
+@media only screen and (max-width: 600px) {
+     .HomePage .col-50 {
+          width: 100%;
+     }
+}
+
+.OtherServices::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+
+/* Testimonials */
+.HomePage .Testimonials .row-2 {
+     width: 100%;
+     margin: 40px 0px;
+}
+
+.HomePage .Testimonials .col-25 {
+     float: left;
+     padding: 0px 15px;
+     width: 25%;
+}
+
+.HomePage .Testimonials .col-75 {
+     float: left;
+     padding: 0px 15px;
+     width: 69.9%;
+}
+
+.HomePage .Testimonials .row-2::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+
+.HomePage .Testimonials h1 {
+     text-align: center;
+     color: #67739d;
+     font-size: 45px;
+     letter-spacing: 3px;
+     text-shadow: 0px 0px 2px midnightblue;
+     margin-bottom: 0px;
+}
+
+
+.HomePage .Testimonials .col-75 p {
+     text-align: justify;
+     margin: 0px;
+     line-height: 2.0;
+     padding: 15px;
+     background-color: #dfe6e3;
+     box-shadow: 0 0 8px 6px #dfe6e3;
+     border-radius: 5px;
+     color: darkslategrey;
+}
+
+.HomePage .Testimonials img {
+     width: 100%;
+     border-radius: 5px;
+     border: 1.6px solid #67739d;
+     box-shadow: 0px 0px 3px;
+}
+
+
+/* Staff Page */
+.StaffPage {
+     box-sizing: border-box;
+     margin: 50px 75px;
+}
+
+     .StaffPage .row-1 {
+          width: 100%;
+          margin: 15px 0px;
+          padding: 0px;
+     }
+
+          .StaffPage .row-1::after {
+               content: "";
+               clear: both;
+               display: table;
+          }
+
+          .StaffPage .row-1 .col-25 {
+               float: left;
+               padding: 0px 0px;
+               margin: 0 15px;
+               width: 22%;
+               text-align: center;
+          }
+
+               .StaffPage .row-1 .col-25:hover {
+                    opacity: 0.75;
+                    transition: ease 0.5s;
+                    transform: scale(1.05);
+                    font-weight: bold;
+               }
+
+               .StaffPage .row-1 .col-25 img {
+                    width: 100%;
+                    border-radius: 5px 50px;
+                    box-shadow: 0 0 3px;
+               }
+
+               .StaffPage .row-1 .col-25 .overlay {
+                    background-color: #b2c394;
+                    padding: 15px;
+                    color: darkslategrey;
+                    border-radius: 5px 10px;
+                    font-size: larger;
+               }
+
+                    .StaffPage .row-1 .col-25 .overlay p {
+                         margin: 0px;
+                    }
+
+     .StaffPage h1 {
+          text-align: center;
+          color: #67739d;
+          font-size: 45px;
+          letter-spacing: 3px;
+          text-shadow: 0px 0px 2px midnightblue;
+          margin-bottom: 0px;
+     }
+
+     .StaffPage h3 {
+          text-align: center;
+          margin-top: 5px;
+          font-size: 20px;
+          color: #779cc6;
+          margin-bottom: 40px;
+     }
+
+     .StaffPage h2 {
+          text-align: center;
+          color: #7A9832;
+          font-size: 35px;
+          letter-spacing: 3px;
+          text-shadow: 0px 0px 2px #7A9832;
+          margin-bottom: 0px;
+     }
+
+     .StaffPage hr {
+          border: 1.5px solid #7a9832;
+          margin: 100px;
+          border-radius: 5px;
+     }
+
+     .StaffPage .department{
+          margin: 50px 100px;
+     }
+
+     .StaffPage a{
+          text-decoration: none;
+          color: darkslategrey;
+     }
+
+
+     /* FAQ Page */
+     .FAQPage {
+          margin: 50px 200px;
+          color: darkslategrey;
+     }
+
+     .FAQPage h1 {
+          text-align: center;
+          color: #67739d;
+          font-size: 45px;
+          letter-spacing: 3px;
+          text-shadow: 0px 0px 2px midnightblue;
+          margin-bottom: 0px;
+     }
+
+     .FAQPage h3 {
+          text-align: center;
+          margin-top: 5px;
+          font-size: 20px;
+          color: #779cc6;
+          margin-bottom: 60px;
+     }
+
+     .FAQPage .ques {
+          margin-bottom: 0;
+          margin-top: 40px;
+          padding: 15px 20px;
+          border-radius: 10px 10px 1px 1px;
+          border-bottom: 1px solid darkslategrey;
+          background-color: #afbe8b;
+          box-shadow: 0 0 3px #afbe8b;
+          color: darkslategrey;
+          font-size: 20px;
+     }
+
+          .FAQPage .ques:hover {
+               margin-bottom: 0;
+               margin-top: 40px;
+               opacity: 0.5;
+          }
+
+     .FAQPage .ans {
+          margin-top: 0;
+          margin-bottom: 40px;
+          padding: 15px 20px;
+          border-radius: 1px 1px 10px 10px;
+          background-color: #cad4bb;
+          box-shadow: 0 0 3px #afbe8b;
+          color: darkslategrey;
+          font-size: 20px;
+          border: 1px solid darkslategrey;
+          border-top: 0px;
+     }
+
+     .FAQPage h4 img {
+          width: 25px;
+          float: right;
+          margin: 0px 5px;
+          filter: invert(0.25);
+     }
+
+     .FAQPage .ques:hover img {
+          filter: invert(0.9);
+     }
+
+     .FAQPage h2 {
+          color: #67739d;
+          margin: 20px;
+          text-align: center;
+          font-size: 35px;
+     }
+
+     .FAQPage hr {
+          border: 1.5px solid #7a9832;
+          margin: 80px 90px;
+          border-radius: 5px;
+     }
+
+     .FAQPage .contact-us img {
+          width: 15px;
+     }
+
+     .FAQPage a {
+          text-decoration: none;
+     }
+
+/* Registration Page*/
+.RegisterPage {
+     margin: 50px 20%;
+     padding: 50px;
+     color: darkslategrey;
+     background: #dfe6e3;
+     border: 1px solid #67739d;
+     box-shadow: 0 0 5px gray;
+     border-radius: 5px;
+}
+
+     .RegisterPage h1 {
+          text-align: center;
+          color: #67739d;
+          font-size: 45px;
+          letter-spacing: 3px;
+          text-shadow: 0px 0px 2px midnightblue;
+          margin-bottom: 0px;
+     }
+
+     .RegisterPage h3 {
+          text-align: center;
+          margin-top: 10px;
+          font-size: 20px;
+          color: #779cc6;
+          margin-bottom: 60px;
+     }
+
+     .RegisterPage .inputs {
+          margin: 30px;
+          padding: 5px;
+     }
+
+     .RegisterPage .textbox {
+          border-radius: 4px;
+          margin: 10px;
+          border: 0px;
+          padding: 8px;
+          color: darkslategrey;
+          border: 2px solid lightgrey;
+          background-color: #e5eaee;
+     }
+
+          .RegisterPage .textbox:hover {
+               cursor: pointer;
+               background-color: lightgray;
+          }
+
+          .RegisterPage .textbox:focus {
+               border: 2px solid #555;
+               background-color: lightgray;
+          }
+
+     .RegisterPage .label {
+          font-size: larger;
+          margin: 10px;
+          padding: 5px;
+     }
+
+     .RegisterPage .dropDown {
+          border-radius: 3px;
+          border: none;
+          padding: 5px;
+          margin: 5px;
+          background-color: #e5eaee;
+     }
+
+          .RegisterPage .dropDown:focus {
+               background-color: lightgrey;
+               border: 1px solid lightgrey;
+          }
+
+          .RegisterPage .dropDown:hover {
+               background-color: lightgrey;
+               cursor: pointer;
+          }
+
+     .RegisterPage .button {
+          background-color: #a49667;
+          margin: 1px 1%;
+          color: ghostwhite;
+          font-size: larger;
+          padding: 10px 15px;
+          border-radius: 5px;
+          border: 1px solid;
+     }
+
+          .RegisterPage .button:hover {
+               cursor: pointer;
+               background-color: #94875d;
+               border: 1px solid darkslategrey;
+          }
+
+     .RegisterPage .checkBox {
+          margin: 15px;
+     }
+
+     .RegisterPage .validator{
+          color: firebrick;
+     }
+
+
+/* View Data Page */
+.ViewPage h1 {
+     text-align: center;
+     color: #67739d;
+     font-size: 45px;
+     letter-spacing: 3px;
+     text-shadow: 0px 0px 2px midnightblue;
+     margin-bottom: 50px;
+}
+
+.ViewPage {
+     margin: 5%;
+}
+
+     .ViewPage table {
+          color: darkslategrey;
+          border-collapse: collapse;
+          width: 100%;
+          border-spacing: 5px;
+     }
+
+     .ViewPage table, td, th {
+          border: 2px solid black;
+          padding: 1%;
+          margin: 1%;
+          font-size: small;
+          text-align: center;
+          background-color: #e5eaee;
+     }
+
+          .ViewPage table th {
+               background-color: #cddaea
+          }
+
+.CalcPage {
+     margin: 50px 20%;
+     padding: 50px;
+     color: darkslategrey;
+     background: #dfe6e3;
+     border: 1px solid #67739d;
+     box-shadow: 0 0 5px gray;
+     border-radius: 5px;
+}
+
+     .CalcPage h1 {
+          text-align: center;
+          color: #67739d;
+          font-size: 45px;
+          letter-spacing: 3px;
+          text-shadow: 0px 0px 2px midnightblue;
+          margin-bottom: 0px;
+     }
+
+     .CalcPage h3 {
+          text-align: center;
+          margin: 5px 5px 50px 5px;
+          font-size: 20px;
+          color: #779cc6;
+     }
+
+     .CalcPage .CalcForm {
+          color: darkslategrey;
+     }
+
+.CalcForm .inputs {
+     margin: 30px;
+     padding: 5px;
+}
+
+.CalcForm .textbox {
+     border-radius: 4px;
+     margin: 10px;
+     border: 0px;
+     padding: 8px;
+     color: darkslategrey;
+     border: 2px solid lightgrey;
+     background-color: #e5eaee;
+}
+
+     .CalcForm .textbox:hover {
+          cursor: pointer;
+          background-color: lightgray;
+     }
+
+     .CalcForm .textbox:focus {
+          border: 2px solid #555;
+          background-color: lightgray;
+     }
+
+.CalcForm .label {
+     font-size: larger;
+     margin: 10px;
+     padding: 5px;
+}
+
+.CalcForm .dropDown {
+     border-radius: 3px;
+     border: none;
+     padding: 5px;
+     margin: 5px;
+     background-color: #e5eaee;
+     font-size: medium;
+     color: darkslategrey;
+}
+
+     .CalcForm .dropDown:focus {
+          background-color: ghostwhite;
+          border: 1px solid lightgrey;
+     }
+
+     .CalcForm .dropDown:hover {
+          background-color: lightgrey;
+          cursor: pointer;
+     }
+
+.CalcForm .button {
+     background-color: #a49667;
+     margin: 1px 1%;
+     color: ghostwhite;
+     font-size: larger;
+     padding: 10px 15px;
+     border-radius: 5px;
+     border: 1px solid;
+}
+
+     .CalcForm .button:hover {
+          cursor: pointer;
+          background-color: #94875d;
+          border: 1px solid darkslategrey;
+     }
+
+.CalcForm .checkBox {
+     margin: 15px;
+}
+
+.CalcForm p {
+     margin: 5px 4%;
+}
+
+.CalcForm #ContentPlaceHolder1_lblTotal {
+     font-weight: bold;
+}
+
